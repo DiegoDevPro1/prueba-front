@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Dashboard",
+    "icon": "fa fa-share",
+    "pathModule":"dashboard",
+    "routes": []
+  },
+
+  {
+    "name": "Clientes",
+    "icon": "fas fa-users-cog",
+    "pathModule": "",
+    "routes": [
+      {
+        "path": "clientes/datos-cliente",
+        "name": "Datos Cliente"
+      },
+      {
+        "path": "clientes/tramos-tarifa",
+        "name": "Tramos Tarifa"
+      }
+    ]
+  },
+  {
+    "name": "Usuarios",
+    "icon": "fa fa-user-circle",
+    "pathModule": "",
+    "routes": [
+      {
+        "path": "usuarios/listado",
+        "name": "Listado de Usuarios"
+      },
+      {
+        "path": "usuarios/perfil",
+        "name": "Perfil de Usuario"
+      }
+    ]
+  }
+]

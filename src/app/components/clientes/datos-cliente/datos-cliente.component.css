@@ -1,0 +1,148 @@
+.mantenimientoContainer {
+  max-width: 90%;
+  min-width: 1000px;
+  overflow-x: auto;
+  margin-left: 50px;
+}
+
+@media (max-width: 1400px) {
+  .mantenimientoContainer {
+    max-width: 85%;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mantenimientoContainer {
+    max-width: 80%;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mantenimientoContainer {
+    max-width: 70%;
+    min-width: 600px;
+  }
+}
+
+/* ESTILOS REGISTRO */
+.input-container {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-container input,
+.input-container select,
+.input-container textarea {
+  width: 100%;
+  padding: 8px 6px;
+  border-bottom: 3px solid #828283;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-container input:focus,
+.input-container select:focus,
+.input-container textarea:focus {
+  border-color: #5030e1;
+}
+
+.input-container label {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  font-size: 14px;
+  color: #999;
+  transition: 0.3s;
+}
+
+.input-container input:focus + label,
+.input-container select:focus + label,
+.input-container textarea:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container select:not(:placeholder-shown) + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0px;
+  font-size: 12px;
+  color: #5030e1;
+}
+.input-container textarea {
+  min-height: 50px;
+  resize: none;
+}
+
+.mantenimientoContainer {
+  width: 100%;
+  max-width: 90%;
+  background-color: rgb(233, 233, 233);
+  min-width: 1000px;
+  overflow-x: auto;
+  margin-left: 50px;
+  margin-bottom: 1rem;
+  padding: 20px;
+  margin-top: 1rem;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.columnForm {
+  width: 100%;
+}
+
+.rowForm {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+
+/* CALCULO MONTO */
+
+
+.calculoMontoContainer {
+  max-width: 90%;
+  min-width: 1000px;
+  overflow-x: auto;
+  margin-left: 50px;
+}
+
+@media (max-width: 1400px) {
+  .calculoMontoContainer {
+    max-width: 85%;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .calculoMontoContainer {
+    max-width: 80%;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .calculoMontoContainer {
+    max-width: 70%;
+    min-width: 600px;
+  }
+}
+
+.calculoMontoContainer {
+  width: 100%;
+  max-width: 90%;
+  background-color: rgb(233, 233, 233);
+  min-width: 1000px;
+  overflow-x: auto;
+  margin-left: 50px;
+  margin-bottom: 1rem;
+  padding: 20px;
+  margin-top: 2rem;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}

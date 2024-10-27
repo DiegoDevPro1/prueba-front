@@ -1,0 +1,37 @@
+<div class="text-gray-100 text-xl">
+  <div class="p-2.5 mt-1 flex items-center">
+    <h1 class="font-bold text-gray-200 text-[15px] ml-3">Aplicación</h1>
+  </div>
+  <div class="my-2 bg-gray-600 h-[1px]"></div>
+</div>
+
+<div *ngFor="let opcion of modules">
+  <div
+    class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-indigo-600 text-white"
+    (click)="opcion.routes.length > 0 ? dropdown($event) : sendRoutes(opcion)"
+    [routerLink]="opcion.pathModule ? opcion.pathModule : null"
+  >
+    <i class="{{ opcion.icon }}" aria-hidden="true"></i>
+
+    <div class="flex justify-between w-full items-center">
+      <span class="text-[15px] ml-4 text-gray-200 font-bold">{{
+        opcion.name
+      }}</span>
+      <span *ngIf="opcion.routes.length > 0" class="text-sm rotate-180 arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </span>
+    </div>
+  </div>
+  <div
+    class="submenu text-left text-sm mt-2 w-full text-gray-200 font-bold hidden"
+  >
+    <h1
+      class="cursor-pointer p-2 hover:bg-indigo-600 rounded-md mt-1"
+      *ngFor="let ruta of opcion.routes"
+      [routerLink]="ruta.path"
+      (click)="sendRoutes(opcion, ruta.name ,ruta.path)"
+    >
+      {{ ruta.name }}
+    </h1>
+  </div>
+</div>
